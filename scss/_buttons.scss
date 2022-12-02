@@ -1,0 +1,56 @@
+@import './colors';
+
+button[data-type="icon"] {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button[data-type="icon"][data-color="white"] {
+    fill: $neutral-100;
+}
+
+button[data-type="icon"][data-color="blue"] {
+    fill: $primary-400;
+}
+
+button[data-type="icon"][data-color="black"] {
+    fill: $neutral-900;
+}
+
+button[data-icon="search"] {
+    transition: transform .2s;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+button[data-icon="arrow"] {
+    cursor: initial;
+    transition: fill .35s;
+
+    &:hover {
+        fill: $primary-400;
+    }
+}
+
+.btn-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    cursor: pointer;
+    font-weight: 600;
+    fill: $neutral-100;
+    color: $neutral-100;
+    border-radius: 100vmax;
+    border: none;
+    
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}

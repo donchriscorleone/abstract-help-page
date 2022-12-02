@@ -1,0 +1,51 @@
+@import './colors';
+
+a {
+    color: $neutral-900;
+    text-decoration: none;
+}
+
+a[data-type="icon"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    transition: opacity .35s;
+    background-color: $neutral-900; // TODO: change this
+
+    &:hover, &:focus-within {
+        text-decoration: underline;
+
+        &[data-icon="topbar"] {
+            opacity: .8;
+        }
+    }
+
+    &:focus-within {
+        color: $neutral-900;
+    }
+}
+
+a[data-type="arrow"] {
+    text-transform: capitalize;
+    color: $primary-400;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+}
+
+@media screen and (min-width: 50em) {
+    a[data-type="arrow"] {
+        font-size: 1.35rem;
+        line-height: 1.95rem;
+    }
+}
+
+a.link {
+    color: $neutral-100;
+
+    &:hover, &:focus-within {
+        text-decoration: underline;
+    }
+}

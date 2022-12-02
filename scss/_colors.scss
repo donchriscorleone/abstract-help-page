@@ -1,0 +1,39 @@
+$primary-400: #4C5FD5;
+
+$accent-400: #dadbf1;
+
+$neutral-100: #fff;
+$neutral-200: #DADBF1;
+$neutral-900: #000000;
+
+.bg-primary-400 {
+    background-color: $primary-400;
+}
+
+.bg-accent-400 {
+    background-color: $accent-400;
+}
+
+.bg-neutral-100 {
+    background-color: $neutral-100;
+}
+
+.bg-neutral-900 {
+    background-color: $neutral-900;
+}
+
+.color-primary-400 {
+    color: $primary-400;
+}
+
+.color-accent-400 {
+    color: $accent-400;
+}
+
+.color-neutral-100 {
+    color: $neutral-100;
+}
+
+.color-neutral-900 {
+    color: $neutral-900;
+}

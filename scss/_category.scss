@@ -1,0 +1,80 @@
+@import './colors';
+
+.category {
+    display: flex;
+    gap: 1rem;
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.6rem;
+
+    img {
+        max-height: 110px;
+    }
+}
+
+.category-content {
+    max-width: 50ch;
+}
+
+.category-content > *:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.category-content__title {
+    margin-top: 1.6rem;
+    font-size: 1.95rem;
+}
+
+.category-content__desc {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.category-content__link {
+    font-size: 1.3rem !important;
+    line-height: 2 !important;
+
+    &:hover, :focus-within {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .category {
+        gap: 1.2rem;
+    }
+
+    .category-icon {
+        margin-top: 1.3rem;
+    
+        img {
+            max-height: 100px;
+        }
+    }
+
+    .category-content {
+        max-width: 45ch;
+    }
+    
+    .category-content > *:not(:last-child) {
+        margin-bottom: 1.3rem;
+    }
+    
+    .category-content__title {
+        font-size: 2rem;
+    }
+    
+    .category-content__desc {
+        font-size: 1.6rem;
+    }
+    
+    .category-content__link {
+        font-size: 1.6rem !important;
+
+    }
+    
+}

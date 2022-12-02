@@ -1,0 +1,47 @@
+@import './colors';
+
+.form-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .icon {
+        position: absolute;
+        right: 0;
+    }
+}
+
+label {
+    position: absolute;
+    left: -999px;
+    visibility: hidden;
+    clip: 0;
+    // Visually hidden
+}
+
+input[type="search"] {
+    border: 1px solid $neutral-900;
+    border-radius: 2px;
+    padding: .75rem .95rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: border-color .35s;
+    display: block;
+    width: 100%;
+    box-shadow: 0 9px 14px 0 rgb(0 0 0 / 10%);
+
+    &:hover, &:focus-within {
+        border-color: $primary-400;
+
+        + .icon {
+            fill: $primary-400;
+        }
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
