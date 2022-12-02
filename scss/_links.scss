@@ -35,6 +35,31 @@ a[data-type="arrow"] {
     line-height: 1.75rem;
 }
 
+a[data-type="button"] {
+    padding: 1rem;
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+a[data-type="button"][data-color="primary"] {
+    background-color: $primary-400;
+    color: $neutral-100;
+    transition: color .35s, background-color .35s;
+
+    &:hover, &:focus-within {
+        color: $neutral-900;
+        background-color: $neutral-100;
+    }
+}
+
+a[data-type="button"][data-color="outline"] {
+    border: 2px solid $neutral-100;
+    color: $neutral-100;
+    background-color: $neutral-900;
+}
+
+
 @media screen and (min-width: 50em) {
     a[data-type="arrow"] {
         font-size: 1.35rem;

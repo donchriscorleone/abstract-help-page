@@ -242,6 +242,29 @@ a[data-type=arrow] {
   line-height: 1.75rem;
 }
 
+a[data-type=button] {
+  padding: 1rem;
+  display: block;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+a[data-type=button][data-color=primary] {
+  background-color: #4C5FD5;
+  color: #fff;
+  transition: color 0.35s, background-color 0.35s;
+}
+a[data-type=button][data-color=primary]:hover, a[data-type=button][data-color=primary]:focus-within {
+  color: #000000;
+  background-color: #fff;
+}
+
+a[data-type=button][data-color=outline] {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #000000;
+}
+
 @media screen and (min-width: 50em) {
   a[data-type=arrow] {
     font-size: 1.35rem;
