@@ -541,5 +541,59 @@ input[type=search]::-webkit-search-results-decoration {
     font-size: 1.6rem !important;
   }
 }
+.bg-primary-400 {
+  background-color: #4C5FD5;
+}
+
+.bg-accent-400 {
+  background-color: #dadbf1;
+}
+
+.bg-neutral-100 {
+  background-color: #fff;
+}
+
+.bg-neutral-900 {
+  background-color: #000000;
+}
+
+.color-primary-400 {
+  color: #4C5FD5;
+}
+
+.color-accent-400 {
+  color: #dadbf1;
+}
+
+.color-neutral-100 {
+  color: #fff;
+}
+
+.color-neutral-900 {
+  color: #000000;
+}
+
+.footer-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-list__title {
+  font-size: 1.6rem;
+}
+
+.footer-list > li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.sub-footer__container {
+  margin-top: 0.5rem;
+}
+.sub-footer__container .sub-footer__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
 
 /*# sourceMappingURL=styles.css.map */

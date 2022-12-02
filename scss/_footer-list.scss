@@ -1,0 +1,25 @@
+@import './colors';
+
+.footer-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-list__title {
+    font-size: 1.6rem;
+}
+
+.footer-list > li:not(:first-child) {
+    margin-top: .5rem;
+}
+
+.sub-footer__container {
+    margin-top: .5rem;
+
+    .sub-footer__title {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+        display: block;
+    }
+}
