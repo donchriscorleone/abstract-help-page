@@ -1,0 +1,29 @@
+@import './colors';
+
+.category-container {
+    background-color: $neutral-100;
+}
+
+.category-container__wrapper {
+    padding: 2rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    max-width: 40em;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 40em) {
+    .category-container__wrapper {
+        padding: 4rem;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        max-width: 70em;
+    }
+}
