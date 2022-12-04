@@ -1,0 +1,39 @@
+@import './colors';
+
+.attribution {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    .links {
+        display: flex;
+        gap: .5rem;
+
+        a[data-icon=social-media] {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: $neutral-100;
+        }
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .attribution {
+        right: 0;
+        left: initial;
+        max-width: 40em;
+        bottom: 0;
+        position: initial;
+    }
+}

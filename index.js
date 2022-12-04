@@ -17,3 +17,11 @@ const headerControls = document.querySelector('.header-controls');
 burgerBtn.addEventListener('click', (e) => {
     headerControls.toggleAttribute('show');
 })
+
+const forms = document.querySelectorAll('form');
+forms.forEach(f => {
+    f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+    })
+})

@@ -364,7 +364,7 @@ button[data-icon=arrow]:hover {
 
 button[data-type=float] {
   border: none;
-  position: absolute;
+  position: fixed;
   right: 20px;
   bottom: 10px;
   border-radius: 100vmax;
@@ -944,7 +944,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 @media screen and (min-width: 40em) {
   .category-container__wrapper {
-    padding: 4rem;
+    padding: 8rem 4rem;
   }
 
   .categories {
@@ -987,6 +987,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .footer {
   background-color: #000000;
+  position: relative;
 }
 
 .footer-wrapper {
@@ -1029,6 +1030,71 @@ input[type=search]::-webkit-search-results-decoration {
     position: absolute;
     right: 0;
     bottom: 2rem;
+  }
+}
+.bg-primary-400 {
+  background-color: #4C5FD5;
+}
+
+.bg-accent-400 {
+  background-color: #dadbf1;
+}
+
+.bg-neutral-100 {
+  background-color: #fff;
+}
+
+.bg-neutral-900 {
+  background-color: #000000;
+}
+
+.color-primary-400 {
+  color: #4C5FD5;
+}
+
+.color-accent-400 {
+  color: #dadbf1;
+}
+
+.color-neutral-100 {
+  color: #fff;
+}
+
+.color-neutral-900 {
+  color: #000000;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.attribution .links {
+  display: flex;
+  gap: 0.5rem;
+}
+.attribution .links a[data-icon=social-media] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.attribution .links .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+@media screen and (max-width: 40em) {
+  .attribution {
+    right: 0;
+    left: initial;
+    max-width: 40em;
+    bottom: 0;
+    position: initial;
   }
 }
 

@@ -10,6 +10,273 @@
     <title>Abstract</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-intro">
+                <a href="#" target="_blank" data-type="icon" data-icon="topbar">
+                    <img src="./assets/logo-abstract-with-text.svg" alt="Abstract logo">
+                </a>
+                <a class="link" href="#" target="_blank">Help Center</a>
+            </div>
+            <div class="header-actions">
+                <a href="#" data-type="button" data-color="outline" target="_blank">Submit a request</a>
+                <a href="#" data-type="button" data-color="primary" target="_blank">Sign In</a>
+                <button data-type="icon" data-icon="search" data-color="white" aria-label="Search button">
+                    <svg class="icon block">
+                        <use xlink:href="./sprites/icon-utilities.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <button data-type="icon" data-icon="menu" data-color="white" aria-label="Menu button">
+                    <svg class="icon block">
+                        <use xlink:href="./sprites/icon-utilities.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-search-wrapper" show="false">
+            <form action="POST" id="header-search" class="header-search-form">
+                <div class="form-field">
+                    <label for="header-search">Search</label>
+                    <input placeholder="Search" type="search" name="header-search" id="header-search">
+                </div>
+                <button class="header-search-close" type="button" data-type="icon" data-icon="close" data-color="black" aria-label="Close button">
+                    <svg class="icon block">
+                        <use xlink:href="./sprites/icon-utilities.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    
+        <div class="header-controls">
+            <div class="header-controls-wrapper">
+                <div class="mobile-nav | bg-neutral-900">
+                    <div class="mobile-nav-wrapper">
+                        <a href="#" class="link" target="_blank">Submit a request</a>
+                        <a href="#" class="link" target="_blank">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-wrapper">
+                <h1 class="hero-title">How can we help?</h1>
+                <div class="hero-form-wrapper">
+                    <div class="form-field">
+                        <label for="search">Search</label>
+                        <input placeholder="Search" type="search" name="search" id="search">
+                        <svg class="icon">
+                            <use xlink:href="./sprites/icon-utilities.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-container">
+            <div class="category-container__wrapper">
+                <div class="categories">
+        
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-abstract.png" alt="A picture of Abstract">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">Using Abstract</h2>
+                                <p class="category-content__desc">Abstract lets you manage, version, and document your designs in one place.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-account.png" alt="A picture of Account">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">
+                                    Manage your account</h2>
+                                <p class="category-content__desc">Configure your account settings, such as your email, profile details, and password.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-manage.png" alt="A picture of Manage">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">Manage organizations, teams, and projects</h2>
+                                <p class="category-content__desc">Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-money.png" alt="A picture of Money">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">
+                                    Manage billing</h2>
+                                <p class="category-content__desc">Change subscriptions and payment details.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-key.png" alt="A picture of Key">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">Authenticate to Abstract</h2>
+                                <p class="category-content__desc">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="./assets/img-support.png" alt="A picture of Support">
+                        </div>
+                       <div class="category-content-wrapper">
+                            <div class="category-content">
+                                <h2 class="category-content__title">Abstract support</h2>
+                                <p class="category-content__desc">Get in touch with a human.</p>
+                                <a class="category-content__link" href="#" target="_blank" data-type="arrow">Learn More →</a>
+                            </div>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-list-container">
+                <h3 class="footer-list__title | color-neutral-100">Abstract</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="link" target="_blank">Start trial</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Download</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-list-container">
+                <h3 class="footer-list__title | color-neutral-100">Resources</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="link" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Release Notes</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-list-container">
+                <h3 class="footer-list__title | color-neutral-100">Community</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="link" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Podcast</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-list-container">
+                <h3 class="footer-list__title | color-neutral-100">Company</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="link" target="_blank">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link" target="_blank">Legal</a>
+                    </li>
+                </ul>
+                <div class="sub-footer__container">
+                    <span class="sub-footer__title | color-neutral-100">Contact Us</span>
+                    <ul class="sub-footer-list">
+                        <li>
+                            <a href="#" class="link" target="_blank">info@abstract.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-copyright">
+                <a href="#" target="_blank" data-type="icon" data-icon="topbar">
+                    <img src="./assets/logo-abstract.svg" alt="Abstract logo">
+                </a>
+                <div class="copyright-content">
+                    <p class="color-neutral-100">© Copyright 2022</p>
+                    <p class="color-neutral-100">Abstract Studio Design, Inc.</p>
+                    <p class="color-neutral-100">All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            <span class="color-accent-400">For educational purposes only. Challenged by <a href="https://www.frontendpractice.com/projects/abstract" target="_blank" class="color-primary-400">frontendpractice</a></span>
+            <span class="color-accent-400">Website from <a class="color-primary-400" href="https://help.abstract.com/hc/en-us" target="_blank">Abstract</a></span>
+            <span class="color-accent-400">Coded by <a class="color-primary-400" href="https://www.instagram.com/devchristopherii/" target="_blank">Christopher II</a></span>
+            <div class="links">
+                <a href="https://twitter.com/topheriidev" target="_blank" data-type="icon" data-icon="social-media" aria-label="Christopher's Twitter">
+                    <svg class="icon">
+                        <use xlink:href="./sprites/icon-socials.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+    
+                <a href="https://www.instagram.com/devchristopherii/" target="_blank" data-type="icon" data-icon="social-media" aria-label="Christopher's Instagram">
+                    <svg class="icon">
+                        <use xlink:href="./sprites/icon-socials.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/christopher-ii-lajom-031959211/" target="_blank" data-type="icon" data-icon="social-media" aria-label="Christopher's LinkedIn">
+                    <svg class="icon">
+                        <use xlink:href="./sprites/icon-socials.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <button data-type="float" data-color="blue" aria-label="Help">
         <svg class="icon block">
             <use xlink:href="./sprites/icon-utilities.svg#icon-help"></use>

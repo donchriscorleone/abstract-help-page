@@ -57,7 +57,7 @@ button[data-icon="arrow"] {
 
 button[data-type="float"] {
     border: none;
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 10px;
     border-radius: 100vmax;
