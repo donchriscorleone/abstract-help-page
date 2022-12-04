@@ -54,3 +54,32 @@ button[data-icon="arrow"] {
         height: 20px;
     }
 }
+
+button[data-type="float"] {
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 100vmax;
+    padding: .75rem 1.2rem;
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &[data-color="blue"] {
+        fill: $neutral-100;
+        background-color: $primary-400;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    span {
+        color: $neutral-100;
+        font-size: .95rem;
+        font-weight: 700;
+    }
+}

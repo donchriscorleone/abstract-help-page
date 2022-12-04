@@ -362,6 +362,32 @@ button[data-icon=arrow]:hover {
   height: 20px;
 }
 
+button[data-type=float] {
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 100vmax;
+  padding: 0.75rem 1.2rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button[data-type=float][data-color=blue] {
+  fill: #fff;
+  background-color: #4C5FD5;
+}
+button[data-type=float] .icon {
+  width: 20px;
+  height: 20px;
+}
+button[data-type=float] span {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .bg-primary-400 {
   background-color: #4C5FD5;
 }
